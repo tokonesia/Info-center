@@ -1,0 +1,106 @@
+body {
+    font-family: 'DM Sans', sans-serif;
+    margin :0px !important;
+    line-height: 1.75rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+
+footer {
+    border-top: 1px solid #ddd; 
+    margin-top: 6rem;
+}
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    transform: translateZ(0);
+    z-index: 100;
+    display: block;
+}
+
+.nav-text-center {
+    text-align-last: center;
+}
+
+.navbar {
+    border-bottom:1px solid black;
+    box-shadow: 0 4px 2px -2px gray;
+    border-radius:0px 0px 12px 12px;
+    padding: 20px;
+}
+
+.update-button {
+    background: #FEC14E;
+    border-radius: 75px;
+    color: white;
+    width:37%;
+    height:3rem;
+    margin: 2rem;
+    padding-top: 0.8rem;
+}
+
+.bookmark {
+    color: black;
+    text-decoration: underline;
+}
+
+.fab {
+    margin: 0.25rem;
+    font-size: 40px;
+}
+
+.par-spacing {
+    margin-top: 5rem;
+}
+
+.num-spacing {
+    margin-left: 2rem;
+}
+
+.keb-pen table,
+.keb-pen td,
+.keb-pen th {
+    border: 2px solid rgb(0, 0, 0);
+    border-collapse: collapse;
+    padding: 30px;
+    vertical-align: text-top;
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+.keb-pen th {
+    text-align: center;
+    font-size: 20px;
+}
+
+.justify-text {
+    text-align: justify;
+    text-justify: inter-word;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color:#FEC14E;
+}
+
+@media only screen and (max-width:768px){
+    footer>.container>.row>.col-lg-11>.row>.col-lg-3 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+    
+    .update-button {
+        width:100%;
+    }
+}

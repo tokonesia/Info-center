@@ -1,0 +1,248 @@
+body {
+    margin:0;
+    font-family: 'DM Sans', sans-serif;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1.5fr 3fr ;
+    column-gap: 30px;
+}
+
+.sticky-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    transform: translateZ(0);
+    z-index: 100;
+    display: block;
+}
+
+nav {
+    padding:30px;
+    border-right: 1px solid #ddd;
+    grid-column:span 1;
+}
+
+nav>h2, nav>h5 {
+    margin-bottom:2rem;
+    line-height: 1.5em;
+    text-align: left;
+}
+
+article h1 {
+    font-size: 2.5em;
+    text-align: left;
+}
+
+article img {
+    width:100%;
+}
+
+.cat-spacing {
+    padding-top: 120px;
+}
+
+.category-button {
+    background-color:white;
+    border-radius:45px;
+    box-shadow:0px 8px 15px rgba(0, 0, 0, 0.1);
+    border:none;
+    margin-bottom:1rem;
+}
+
+.accordion {
+    width: 90%;
+    max-width: 1000px;
+    margin: 2rem auto;
+    background: #FFFFFF;
+    box-shadow: 0px 2px 9px 3px rgba(53, 74, 185, 0.17);
+    border-radius: 0px 0px 30px 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+  
+.accordion-item {
+    background-color: #fff;
+    color: #111;
+    margin: 1rem 0;
+    border: none;
+}
+  
+.accordion-item-header {
+    padding: 0.5rem 3rem 0.5rem 1rem;
+    min-height: 3.5rem;
+    line-height: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+  
+.accordion-item-header::after {
+    content: "\002B";
+    font-size: 2rem;
+    position: absolute;
+    right: 1rem;
+    color:#F9B22B;
+}
+
+.accordion-item-header.active::after {
+    content: "\2212";
+}
+  
+.accordion-item-body {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.75s ease-in-out;
+}
+  
+.accordion-item-body-content {
+    padding: 1rem;
+    padding-bottom: 1.5rem;
+    line-height: 1.5rem;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, transparent, #34495e, transparent) 50;
+    text-align: left;
+}
+
+.accordion-item-body-content>img {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.style-border {
+    border-bottom:1px solid #ddd;
+    padding:3rem;
+}
+
+.button-1{
+    padding: 10px 20px;
+    font-weight: bold;
+    border:none;
+    font-size:1rem; 
+    margin-bottom:2rem;
+    width:380px;
+    text-align:left;
+    background-color: #FFFFFF;
+    box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+}
+
+.button-1:hover {
+    transform: scale(1.05);
+}
+  
+.button-1>img{
+    margin-left:15px;
+    margin-right:20px;
+    display:inline-block; 
+    vertical-align:middle; 
+}
+
+.question-card {
+    border-radius: 0px 0px 20px 20px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.3);
+    height: 45px;
+    text-align: center;
+    display:flex; 
+    justify-content: space-between;
+    width:60%;
+    margin-bottom: 1.5%;
+}
+
+.square {
+    margin: 2rem;
+}
+
+.box-square {
+    margin-top: 3rem;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 480px) {
+    .square {
+        height: 70px;
+        width: 70px;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    * {
+        font-size:8px;
+    }
+    .square {
+        height: 90px;
+        width: 90px;
+    }
+    
+    .search-bar {
+        margin-left: 10%;
+    }
+
+    html {
+        font-size: 14px;
+    }
+
+    .text-warning {
+        margin-top:1rem;
+    }
+
+    nav {
+        padding:30px 5px;
+    }
+
+    .button-1 {
+        width:350px;
+    }
+
+    .style-border {
+        padding:1rem;
+    
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    * {
+        font-size:14px;
+    }
+    .square {
+        height: 150px;
+        width: 150px;
+    }
+}
+
+@media screen and (max-width:1200px) {
+    nav {
+        grid-column: span 3;
+        border-right:0;
+        border-bottom: 1px solid #ddd;
+    }
+    nav li {
+        display: inline-block;
+        margin-right: 10px;
+    }
+    article {
+        grid-column: span 2;
+    }
+    aside {
+        padding: 16px;
+    }
+}
+
+@media screen and (max-width: 980px) {
+    nav, article , aside {
+        grid-column: span 3;
+    }
+    aside {
+        border-left: 0;
+        border-top: 1px solid #ddd;
+    }
+    article h2 {
+        font-size: 2.5em;
+    }
+}
