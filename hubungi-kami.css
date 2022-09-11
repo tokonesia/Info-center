@@ -1,0 +1,75 @@
+.navbar {
+    border-bottom:1px solid black;
+    box-shadow: 0 4px 2px -2px gray;
+    border-radius:0px 0px 12px 12px;
+    padding: 20px;
+}
+
+.hero {
+    min-height: 60vh; 
+    width:100%;
+    background-image: url("./img/bg-hubungi-kami.png");
+    background-position: center;
+    background-size: cover;
+    position:relative;
+}
+
+.hero-text {
+    width:90%;
+    color:black;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    text-align:center;
+}
+
+.btn-social{
+    background-color:white;
+    border:none;
+    box-shadow: 4px 4px 4px 1px rgba(0, 0, 0, 0.25);    
+    border-radius: 25px;
+    padding:0.7rem 2rem; 
+}
+
+footer {
+    border-top: 1px solid #ddd; 
+    margin-top: 6rem;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:hover {
+    color:#FEC14E;
+}
+
+.fa-brands , .fab {
+    font-size:2rem;
+}
+@media only screen and (max-width:768px){
+    footer>.container>.row>.col-lg-11>.row>.col-lg-3 {
+        display:flex;
+        flex-direction:column;
+        align-items:center;
+        justify-content:center;
+    }
+    .hero {
+        background-size:900px 300px;
+        min-height:40vh;
+        background-repeat:no-repeat;
+    }
+
+    .hubungi-text {
+        text-align:center;
+    }
+
+    .social-img {
+        margin:2rem 0.5rem 0.5rem 0.5rem;
+        width:300px;
+    }
+    
+    
+}
