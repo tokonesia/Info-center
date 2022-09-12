@@ -1,20 +1,14 @@
-.navbar {
-    border-bottom:1px solid black;
-    box-shadow: 0 4px 2px -2px gray;
-    border-radius:0px 0px 12px 12px;
-    padding: 20px;
-}
-
-.hero {
+.hub-kami-bg {
     min-height: 60vh; 
     width:100%;
     background-image: url("./img/bg-hubungi-kami.png");
     background-position: center;
     background-size: cover;
     position:relative;
+    
 }
 
-.hero-text {
+.hub-kami-text {
     width:90%;
     color:black;
     position:absolute;
@@ -22,6 +16,15 @@
     left:50%;
     transform:translate(-50%,-50%);
     text-align:center;
+}
+
+.hub-kami-padding {
+    padding: 0px 225px;
+}
+
+.hub-kami-center {
+    text-align: center;
+    align-self: center;
 }
 
 .btn-social{
@@ -32,44 +35,44 @@
     padding:0.7rem 2rem; 
 }
 
-footer {
-    border-top: 1px solid #ddd; 
-    margin-top: 6rem;
+.btn-social:hover {
+    transform: scale(110%);
 }
 
-a {
-    text-decoration: none;
-    color: black;
+.social-img {
+    opacity: 0.5;
 }
 
-a:hover {
-    color:#FEC14E;
-}
-
-.fa-brands , .fab {
-    font-size:2rem;
-}
 @media only screen and (max-width:768px){
-    footer>.container>.row>.col-lg-11>.row>.col-lg-3 {
-        display:flex;
-        flex-direction:column;
-        align-items:center;
-        justify-content:center;
-    }
-    .hero {
+    .hub-kami-bg {
         background-size:900px 300px;
-        min-height:40vh;
         background-repeat:no-repeat;
+        margin-bottom: -100px;
     }
 
-    .hubungi-text {
-        text-align:center;
+    .hub-kami-padding {
+        padding: 0px;
     }
 
     .social-img {
-        margin:2rem 0.5rem 0.5rem 0.5rem;
-        width:300px;
+        margin:3rem;
+        width:20rem;
     }
-    
-    
+}
+
+@media only screen and (max-width:420px){
+    .hub-kami-bg {
+        background-size:900px 300px;
+        background-repeat:no-repeat;
+        margin-bottom: -120px;
+    }
+
+    .hub-kami-padding {
+        padding: 0px;
+    }
+
+    .social-img {
+        margin:2rem;
+        width:10rem;
+    }
 }
