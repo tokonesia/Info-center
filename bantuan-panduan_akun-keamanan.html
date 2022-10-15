@@ -43,8 +43,8 @@
             </a>
             
             <div class="input-group mb-0 w-50">
-              <input type="text" class="form-control" placeholder="Ketik pertanyaanmu..." aria-label="Search Bar" aria-describedby="button-addon2">
-              <button class="btn btn-warning" type="button" id="search-button">
+              <input type="text" id="text-box" class="form-control" placeholder="Ketik pertanyaanmu..." aria-label="Search Bar" aria-describedby="button-addon2">
+              <button class="btn btn-warning" type="button" id="search-button" onclick="search()">
                   <i class="fas fa-search"></i>
               </button>
             </div>
@@ -236,6 +236,14 @@
         }
       });
     });
+
+    function search() {
+        const input = document.getElementById('text-box');
+        var inputVal = document.getElementById("text-box").value;
+            
+            // Displaying the value
+        location.href = `https://tokonesia.id/?s=${inputVal}`;
+    }
   </script>
   
 </body>
