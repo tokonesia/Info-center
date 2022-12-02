@@ -44,6 +44,67 @@ footer {
     padding-top: 0.8rem;
 }
 
+.ichi {
+    position: fixed;
+    bottom: 0;
+    z-index: -10;
+}
+
+.hello-ichi {
+    transform-origin: bottom right; 
+    transform: rotate(-5deg);
+    transition: all .5s ease-in-out;
+}
+
+.hello-ichi:hover {
+    transform: rotate(0);
+
+}
+
+.info-center-logo {
+    width: 35%; 
+    margin-top: 2.5rem;
+}
+
+.info-center-bg {
+    background-size: 100%; 
+    background-repeat: no-repeat;
+}
+
+.info-center-button {
+    box-sizing: border-box;
+    width: 30%;
+    height: 4.5rem;
+
+    margin-top: 2.5rem;
+
+    background: #F1E0AE;
+    border: 1px solid #000000;
+    border-radius: 21px;
+
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 26px;
+    line-height: 39px;
+
+    text-align: center;
+    transition: all .2s ease-in-out;
+}
+
+.info-center-button:hover {
+    transform: scale(1.1);
+}
+
+.sosmed-button {
+    padding: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.sosmed-button:hover {
+    transform: scale(1.1);
+}
+
 .bookmark {
     color: black;
     text-decoration: underline;
@@ -102,5 +163,27 @@ a:hover {
     
     .update-button {
         width:100%;
+    }
+
+    .info-center-button {
+        width: 50%;
+        height: 3rem;
+        font-size: 12px;
+        line-height: 20px;
+        
+        margin-top: 1.5rem;
+    }
+
+    .info-center-logo {
+        width: 70%;
+    }
+
+    .info-center-bg {
+        background-size: cover; 
+        background-position: top;
+    }
+
+    .ichi {
+        visibility: hidden;
     }
 }
