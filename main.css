@@ -57,7 +57,7 @@ footer {
 }
 
 .hello-ichi:hover {
-    transform: rotate(0);
+    transform: rotate(-2deg);
 
 }
 
