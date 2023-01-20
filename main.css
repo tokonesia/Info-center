@@ -8,6 +8,14 @@ h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
 }
 
+th, td {
+    padding: 15px;
+}
+
+th {
+    text-align: right;
+}
+
 footer {
     border-top: 1px solid #ddd; 
     margin-top: 6rem;
